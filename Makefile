@@ -1,4 +1,4 @@
-PLUGIN_NAME=fentas/davfs
+PLUGIN_NAME=alcapone1933plugin/davfs
 PLUGIN_TAG=latest
 
 DEV_DOCKER_IMAGE_NAME = docker-cli-dev$(IMAGE_TAG)
