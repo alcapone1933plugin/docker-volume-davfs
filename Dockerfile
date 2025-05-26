@@ -8,8 +8,8 @@ RUN set -ex \
     && apk del .build-deps
 CMD ["/go/bin/docker-volume-davfs"]
 
-FROM alpine:3.7
-RUN apk add --no-cache davfs2
+FROM alpine:3.21
+RUN apk add --no-cache davfs2 ca-certificates
 RUN mkdir -p /run/docker/plugins /mnt/state /mnt/volumes
 RUN echo -e $'\
 dav_user        root\n\
